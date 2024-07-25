@@ -1,0 +1,627 @@
+/*
+Template Name: Admin Template
+Author: Niravjoshi / Wrappixel
+File: scss
+*/
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700");
+/*Theme Colors*/
+/**
+ * Table Of Content
+ *
+ * 	1. Color system
+ *	2. Options
+ *	3. Body
+ *	4. Typography
+ *	5. Breadcrumbs
+ *	6. Cards
+ *	7. Dropdowns
+ *	8. Buttons
+ *	9. Typography
+ *	10. Progress bars
+ *	11. Tables
+ *	12. Forms
+ *	14. Component
+ */
+@import url(../assets/icons/font-awesome/css/font-awesome.min.css);
+@import url(../assets/icons/themify-icons/themify-icons.css);
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700");
+
+
+
+#pricing .card-body{
+    width: 350px;
+}
+.logout{
+
+    color:#fff;
+    cursor: pointer;
+    transition: transform .2s;
+}
+.logout:hover{
+
+    transform: scale(1.2);
+}
+.dropdown .btn{
+    border-radius: 0px;
+}
+
+.navbar .nav-item .nav-link{
+    paddin-bottom:30px;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    border-bottom: 3px solid #F1F1F1;
+    margin-left:10px;
+    margin-right: 10px;
+    color:#8873c3 !important;
+    font-weight: 600;
+}
+.navbar .nav-item .nav-link:hover{
+    color:#000;
+    font-style: bold;
+    border-bottom: 3px solid #beb3de;
+}
+.emp-profile{
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+.profile-img{
+    text-align: center;
+}
+.profile-img img{
+    width: 70%;
+    height: 100%;
+}
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -20%;
+    width: 70%;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    background: #212529b8;
+}
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.profile-head h5{
+    color: #333;
+}
+.profile-head h6{
+    color: #0062cc;
+}
+.profile-edit-btn{
+    border: none;
+    border-radius: 1.5rem;
+    width: 70%;
+    padding: 2%;
+    font-weight: 600;
+    color: #6c757d;
+    cursor: pointer;
+}
+.proile-rating{
+    font-size: 12px;
+    color: #818182;
+    margin-top: 5%;
+}
+.proile-rating span{
+    color: #495057;
+    font-size: 15px;
+    font-weight: 600;
+}
+.profile-head .nav-tabs{
+    margin-bottom:5%;
+}
+.profile-head .nav-tabs .nav-link{
+    font-weight:600;
+    border: none;
+}
+.profile-head .nav-tabs .nav-link.active{
+    border: none;
+    border-bottom:2px solid #0062cc;
+}
+.profile-work{
+    padding: 14%;
+    margin-top: -15%;
+}
+.profile-work p{
+    font-size: 12px;
+    color: #818182;
+    font-weight: 600;
+    margin-top: 10%;
+}
+.profile-work a{
+    text-decoration: none;
+    color: #495057;
+    font-weight: 600;
+    font-size: 14px;
+}
+.profile-work ul{
+    list-style: none;
+}
+.profile-tab label{
+    font-weight: 600;
+}
+.profile-tab p{
+    font-weight: 600;
+    color: #0062cc;
+}
+ul.social-network {
+    border:none;
+    margin:0;
+    padding:0;
+}
+
+ul.social-network li {
+    border:none;  
+    margin:0;
+}
+
+ul.social-network li i {
+    font-size:15px;
+    margin:0;
+    color:#fff;
+}
+
+ul.social-network li {
+    display:inline;
+    margin: 0 5px;
+    border: 0px solid #2D2D2D;
+    padding: 5px 0 0;
+    width: 32px;
+    display: inline-block;
+    text-align: center;
+    height: 32px;
+    vertical-align: baseline;
+    color: #000;
+}
+
+ul.social-network {
+    list-style: none;
+    margin: 5px 0 10px -25px;
+}
+
+.container-fluid{
+    width:100vh;
+}
+
+.topbar .container-fluid .row{
+    background-color:#242c41;
+}
+.topbar .container-fluid .navigation{
+    background-color:#fff;
+}
+.topbar .signup a{
+    color:#fff;
+}
+.topbar .social-network a{
+    color:#fff;
+    text-decoration: none !important;
+}
+.topbar i{
+    color:#8270bc;
+    margin-left:5px;
+    margin-right:5px;
+}
+.topbar .mail, .phone{
+
+    color:#fff;
+}
+p{
+    display:inline-block;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+.empty_space{
+    height:15vh;
+}
+.dropdown-item{
+    color:#000;
+}
+.login-container{
+    background-image:url('http://localhost/sarang/public/assets/images/login_bg.jpg');
+}
+#login .container #login-row #login-column #login-box {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    border: 1px solid #9C9C9C;
+    background-color: #FFF;
+    color:#49585f;
+}
+#login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+}
+#login input{
+    border:0px;
+    background-color:#FAFAFA;
+}
+#login input[name=submit]{
+    background-color:#8872c4;
+    border-radius:0px;
+}
+
+#usertype_model .modal-login {		
+    color: #636363;
+    width: 550px;
+    box-shadow: 3px 6px #ee888888;
+}
+#usertype_model .modal-login .modal-content {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+}
+#usertype_model .modal-login .modal-header {
+    border-bottom: none;   
+    position: relative;
+    justify-content: center;
+}
+#usertype_model .modal-login h4 {
+    text-align: center;
+    font-size: 26px;
+    margin: 30px 0 -15px;
+}
+#usertype_model .modal-login .form-control:focus {
+    border-color: #70c5c0;
+}
+#usertype_model .modal-login .form-control, .modal-login .btn {
+    min-height: 40px;
+    border-radius: 3px; 
+}
+#usertype_model .modal-login .close {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}	
+#usertype_model .modal-login .modal-footer {
+    background: #ecf0f1;
+    border-color: #dee4e7;
+    text-align: center;
+    justify-content: center;
+    margin: 0 -20px -20px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+#usertype_model .modal-login .modal-footer a {
+    color: #999;
+}		
+#usertype_model .modal-login .avatar {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -70px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    z-index: 9;
+    background: #60c7c1;
+    padding: 15px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+#usertype_model .modal-login .avatar img {
+    width: 100%;
+}
+#usertype_model .modal-login.modal-dialog {
+    margin-top: 80px;
+}
+#signup_model .modal-login .btn {
+    width:82%;
+    height:60px;
+    color: #fff;
+    border-radius: 4px;
+    background: #8872c4;
+
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    border: none;
+}
+#usertype_model .modal-login .btn {
+    width:48%;
+
+    color: #fff;
+    border-radius: 50px;
+    background: #d8e0e6;
+
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    border: none;
+}
+#usertype_model .modal-login .btn:hover{
+    background: #8872c4;
+}
+#usertype_model .modal-login .btn:hover, .modal-login .btn:focus {
+    background: #fff;
+    color:#8872c4;
+    border:1px solid #8872c4;
+
+}
+.trigger-btn {
+    display: inline-block;
+    margin: 100px auto;
+}
+#usertype_model .modal-backdrop.show {
+    opacity:1 !important;
+}
+#usertype_model .modal-backdrop {
+    background-color:#d1d1d1 !important;
+}
+#usertype_model #usertype_model .fa{
+    width:100%;
+    font-size:70px;
+    padding:20px;
+    color:#c5ced8;
+    border:3px solid #c5ced8;
+    border-radius:15px;
+    cursor:pointer;
+
+}
+#usertype_model .user-type:hover,
+#usertype_model .user-type.active{
+    color:#fff;
+    background-color: #8d78c6;
+    border-radius: 5px;
+    border:5px solid #8d78c6;
+    cursor:pointer;
+
+}
+#imageUpload
+{
+    display: none;
+}
+
+#profileImage
+{
+    border:1px solid #000;
+    border-radius:5px;
+    cursor: pointer;
+    padding:10px;
+}
+.img-fluid{
+    cursor:pointer;
+}
+
+.fbsignup{
+    background-image:url('http://localhost/sarang/public/assets/images/signup-facebook.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    border: inset 15px transparent;
+    background-position:center;
+    height:90px;
+
+
+}
+.gplussignup{
+    background-image:url('http://localhost/sarang/public/assets/images/signup-google.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    background-position:center;
+    height:90px;
+
+}
+
+.fblogin{
+    background-image:url('http://localhost/sarang/public/assets/images/facebook-login2.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    background-position:center;
+    height:90px;   
+}
+.gpluslogin{
+    background-image:url('http://localhost/sarang/public/assets/images/google-login.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    background-position:center;
+    height:90px;
+}
+
+.fa:hover{
+    color: #8473c3;
+}
+.card-container .btn-primary{
+    border-radius: 50px !important;
+    width:100%;
+
+}
+.course-image2 .btn-primary{
+    background-color:#fff;
+}
+#package_modal .modal-dialog{
+    max-width: 900px;
+}
+
+.funkyradio div {
+  clear: both;
+  overflow: hidden;
+}
+
+.funkyradio label {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4;
+  font-weight: normal;
+}
+
+.funkyradio input[type="radio"]:empty,
+.funkyradio input[type="checkbox"]:empty {
+  display: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label,
+.funkyradio input[type="checkbox"]:empty ~ label {
+  position: relative;
+  line-height: 2.5em;
+  text-indent: 3.25em;
+  margin-top: 2em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label:before,
+.funkyradio input[type="checkbox"]:empty ~ label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 2.5em;
+  background: #D1D3D4;
+  border-radius: 3px 0 0 3px;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label,
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
+  color: #888;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label:before,
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #C2C2C2;
+}
+
+.funkyradio input[type="radio"]:checked ~ label,
+.funkyradio input[type="checkbox"]:checked ~ label {
+  color: #777;
+}
+
+.funkyradio input[type="radio"]:checked ~ label:before,
+.funkyradio input[type="checkbox"]:checked ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio input[type="radio"]:focus ~ label:before,
+.funkyradio input[type="checkbox"]:focus ~ label:before {
+  box-shadow: 0 0 0 3px #999;
+}
+
+.funkyradio-default input[type="radio"]:checked ~ label:before,
+.funkyradio-default input[type="checkbox"]:checked ~ label:before {
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio-primary input[type="radio"]:checked ~ label:before,
+.funkyradio-primary input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #337ab7;
+}
+
+.funkyradio-success input[type="radio"]:checked ~ label:before,
+.funkyradio-success input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #5cb85c;
+}
+
+.funkyradio-danger input[type="radio"]:checked ~ label:before,
+.funkyradio-danger input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #d9534f;
+}
+
+.funkyradio-warning input[type="radio"]:checked ~ label:before,
+.funkyradio-warning input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #f0ad4e;
+}
+
+.funkyradio-info input[type="radio"]:checked ~ label:before,
+.funkyradio-info input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #5bc0de;
+}
+
+
+.payment {
+	background-image: url('http://localhost/sarang/public/assets/images/login_bg.jpg');
+        padding-top:50px;
+        padding-bottom: 50px;
+}
+
+
+.payment .page-title {
+	width: 400px;
+	height: 30px;
+	position: relative;
+	left: 20px;
+
+}
+.payment .page-title:after {
+	content: "";
+	position: absolute;
+	height: 5px;
+	background: black;
+	top: 100%;
+	width: 20%;
+	left: 1%;
+	transform: translateX(-50%);
+	transform: translateY(5%);
+
+}
+
+.payment .btn-primary3 {
+	color: #fff;
+	background-color: #a03c85;
+	border-color: #a03c85;
+}
+
+.payment .btn-primary1 {
+	color: black;
+	background-color: white;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.payment .btn-primary2 {
+	color: black;
+	background-color: white;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} 
+
+
+.payment .form-control {
+	display: block;
+	width: 70%;
+	height: calc(1.5em + .75rem + 2px);
+	padding: 1px;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 0px;
+	
+	
+}
+.desc .link{
+    width:200px;
+}
